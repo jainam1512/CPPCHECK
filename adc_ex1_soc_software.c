@@ -83,7 +83,9 @@ uint16_t u16a,u16b;
 void exampleFunction(int* ptr) {
     int arr[5];
     arr[1]=1;
-    arr[10] = 0; 
+    arr[2] = 0; 
+	
+	u16a = arr[1]+arr[2];
 
     printf("%d\n", *ptr); // Null pointer dereference
 }
@@ -93,7 +95,9 @@ void exampleFunction(int* ptr) {
 //
 void main(void)
 {
-    uint32_t f32c;
+    uint32_t f32c = 1;
+	
+	u16a = f32c;
     //
     // Initialize device clock and peripherals
     //
